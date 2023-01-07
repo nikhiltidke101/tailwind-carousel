@@ -7,7 +7,27 @@
     <title>Document</title>
     <link rel="stylesheet" href="../dist/output.css">
 </head>
-<body>
-    
+<body class="font-mono">
+    <div class="w-full h-screen flex flex-col items-center justify-center">
+        <div id="carousel" class="h-screen sm:w-[70%] w-full z-10 flex justify-center items-center">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>      
+        </div>
+
+        <div class="absolute top-0 h-full w-full flex justify-between items-center p-9 -z-0">
+            <button id="prev"><i class="fa-solid fa-arrow-left text-2xl text-black px-6 py-[17px] border border-black rounded-full"></i></button>
+            <button id="next"><i class="fa-solid fa-arrow-right text-2xl text-black px-6 py-[17px] border border-black rounded-full"></i></button>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/1de82af50d.js" crossorigin="anonymous"></script>
 </body>
+<script>
+    document.getElementById("type").addEventListener("click", ()=>{
+        console.log("clicked");
+    })
+</script>
+<script src="./scripts/render.js"></script>
+<script src="./scripts/carousel.js"></script>
 </html>
